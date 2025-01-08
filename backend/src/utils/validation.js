@@ -1,3 +1,4 @@
+// Function to validate a username. Let's make sure it's not empty or full of spaces!
 const validateUsername = (username) => {
   if (!username) {
     return { isValid: false, message: "Username is required" };
@@ -8,6 +9,7 @@ const validateUsername = (username) => {
   return { isValid: true, message: "Username is valid" };
 };
 
+// Function to validate a password. We need to make sure it's strong and secure!
 const validatePassword = (password) => {
   if (!password) {
     return { isValid: false, message: "Password is required" };
@@ -24,6 +26,7 @@ const validatePassword = (password) => {
   return { isValid: true, message: "Password is valid" };
 };
 
+// Function to validate a GST number. It should be exactly 15 characters long.
 const validateGSTNumber = (gstNo) => {
   return gstNo.length === 15;
 };
